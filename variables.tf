@@ -7,13 +7,13 @@ variable "region" {
 variable "cluster_name" {
   description = "EKS cluster name"
   type        = string
-  default     = "devopsshack-cluster"
+  default     = "devops-project"
 }
 
 variable "kubernetes_version" {
   description = "Kubernetes version"
   type        = string
-  default     = "1.30"
+  default     = "1.29"
 }
 
 variable "vpc_cidr" {
@@ -62,7 +62,7 @@ variable "tags" {
   description = "Common resource tags"
   type        = map(string)
   default = {
-    Project   = "DevOpsShack"
+    Project   = "DevOpsproject"
     ManagedBy = "Terraform"
   }
 }
